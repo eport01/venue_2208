@@ -83,7 +83,9 @@ describe Venue do
       venue.add_patron('Cat')
       expect(venue.over_capacity?).to eq true  
       venue.kick_out 
-      expect(venue.over_capacity?).to eq true  
+      expect(venue.over_capacity?).to eq false   
+
+      expect(venue.patron_count).to eq (4)
 
     end 
   end 

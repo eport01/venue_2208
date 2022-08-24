@@ -21,7 +21,7 @@ class Venue
   end 
 
   def over_capacity?
-    if patron_count >= 4
+    if patron_count > 4
       true 
     else
       false 
