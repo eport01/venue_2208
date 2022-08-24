@@ -26,5 +26,12 @@ class Venue
     else
       false 
     end  
-  end     
+  end    
+  
+  def kick_out
+    until patron_count <= 4
+        @patrons.pop(1)
+        @patron_count -= 1 
+    end 
+  end 
 end
